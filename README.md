@@ -37,25 +37,15 @@ A copy of the license is included in the [LICENSE][LICENSE] file.
 [LICENSE]: ./LICENSE
 
 ## Writers Guide
-All documentation in this repository uses [reStructuredText][reStructuredText] markup
-with [Sphinx][Sphinx] extensions.
+All documentation in this repository uses [Markdown][Markdown].
 
 All files in this project must include the relevant SPDX license identifier
 tag. Generally this means each ``.rst`` file should include the line
 
  >.. SPDX-License-Identifier: CC-BY-SA-4.0
 
-[reStructuredText]: http://docutils.sourceforge.net/docs/user/rst/quickref.html
-[Sphinx]: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+[Markdown]: https://mylearningatarm.fuseuniversal.com/learning/plans/6897
 
 In general, try to keep the text width to at most 80 columns.
 Try to write footnotes contents as close a possible to the places referencing
 them.
-
-### Sphinx Extensions
-Sphinx extension files are kept under ``source/extensions/``.
-
-Debugging extensions is easier when running Sphinx with debug messages::
-
-  ``$ make singlehtml SPHINXOPTS=-vv``
-
