@@ -15,7 +15,7 @@ The latest development version is available at:
 ## Contributing
 Anyone may contribute to Edgte IoT Architectural Design Guidelines. Discussion is on the
 [TBC  SYSTEMARCHAC ] and there is a regular conference call.
-See CONTRIBUTING.rst_ for details.
+See [CONTRIBUTING.rst][CONTRIBUTING.rst] for details.
 
 ## Build Instructions
 ### Requirements
@@ -27,13 +27,13 @@ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
 Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 Contributions are accepted under the same with sign-off under the Developer's
-Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.rst][CONTRIBUTING].
+Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.rst][CONTRIBUTING.rst].
 
 A copy of the license is included in the [LICENSE][LICENSE] file.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
    
-[CONTRIBUTING]: ./CONTRIBUTING.rst
+[CONTRIBUTING.rst]: ./CONTRIBUTING.rst
 [LICENSE]: ./LICENSE
 
 ## Writers Guide
