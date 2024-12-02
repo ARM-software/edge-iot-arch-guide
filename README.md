@@ -27,26 +27,26 @@ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
 Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 Contributions are accepted under the same with sign-off under the Developer's
-Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see CONTRIBUTING.rst_.
+Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.rst][CONTRIBUTING].
 
-A copy of the license is included in the LICENSE_ file.
+A copy of the license is included in the [LICENSE][LICENSE] file.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
    
-[CONTRIBUTING.rst]: ./CONTRIBUTING.rst
+[CONTRIBUTING]: ./CONTRIBUTING.rst
 [LICENSE]: ./LICENSE
 
 ## Writers Guide
-All documentation in this repository uses reStructuredText_ markup
-with Sphinx_ extensions.
+All documentation in this repository uses [reStructuredText][reStructuredText] markup
+with [Sphinx][Sphinx] extensions.
 
 All files in this project must include the relevant SPDX license identifier
 tag. Generally this means each ``.rst`` file should include the line
 
-    ``.. SPDX-License-Identifier: CC-BY-SA-4.0``
+ >.. SPDX-License-Identifier: CC-BY-SA-4.0
 
-.. _reStructuredText: http://docutils.sourceforge.net/docs/user/rst/quickref.html
-.. _Sphinx: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
+[reStructuredText]: http://docutils.sourceforge.net/docs/user/rst/quickref.html
+[Sphinx]: http://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html
 
 In general, try to keep the text width to at most 80 columns.
 Try to write footnotes contents as close a possible to the places referencing
@@ -57,5 +57,5 @@ Sphinx extension files are kept under ``source/extensions/``.
 
 Debugging extensions is easier when running Sphinx with debug messages::
 
-  $ make singlehtml SPHINXOPTS=-vv
+  ``$ make singlehtml SPHINXOPTS=-vv``
 
