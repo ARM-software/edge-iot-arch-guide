@@ -1,5 +1,4 @@
-Edge IoT Architectural Design Guidelines
-========================================
+# Edge IoT Architectural Design Guidelines
 
 [to include CI runner result here]
 
@@ -13,23 +12,15 @@ Released "Edge IoT Architecture design guide" PDFs can be found here:
 The latest development version is available at:
 
 
-Contributing
-============
-
+## Contributing
 Anyone may contribute to Edgte IoT Architectural Design Guidelines. Discussion is on the
 [TBC  SYSTEMARCHAC ] and there is a regular conference call.
 See CONTRIBUTING.rst_ for details.
 
-Build Instructions
-==================
+## Build Instructions
+### Requirements
 
-Requirements
-------------
-
-
-License
-=======
-
+## License
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International License (CC-BY-SA-4.0). To view a copy of this license, visit
 http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
@@ -40,16 +31,12 @@ Certificate of Origin. For more on contributing to Edge IoT Achitecture Design G
 
 A copy of the license is included in the LICENSE_ file.
 
-.. image:: https://i.creativecommons.org/l/by-sa/4.0/88x31.png
-   :target: http://creativecommons.org/licenses/by-sa/4.0/
-   :alt: Creative Commons License
+[![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+   
+[CONTRIBUTING.rst]: ./CONTRIBUTING.rst
+[LICENSE]: ./LICENSE
 
-.. _CONTRIBUTING.rst: ./CONTRIBUTING.rst
-.. _LICENSE: ./LICENSE
-
-Writers Guide
-=============
-
+## Writers Guide
 All documentation in this repository uses reStructuredText_ markup
 with Sphinx_ extensions.
 
@@ -65,9 +52,7 @@ In general, try to keep the text width to at most 80 columns.
 Try to write footnotes contents as close a possible to the places referencing
 them.
 
-Sphinx Extensions
------------------
-
+### Sphinx Extensions
 Sphinx extension files are kept under ``source/extensions/``.
 
 Debugging extensions is easier when running Sphinx with debug messages::
