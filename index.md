@@ -19,6 +19,6 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 3. [Automated Firmware updates](source/chapter3-FWU)
 4. [Secure World](source/chapter4-secureworld)
 5. [Long Term Compatibility](source/chapter5-DevicetreeIntegrity)
-6. [Linux custom-builts](source/chapter6-custombuilts)
+6. [Linux custom-builds](source/chapter6-custombuilts)
 7. [Automation](source/chapter7-automation)
 8. [References](source/references)
