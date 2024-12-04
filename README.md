@@ -17,9 +17,6 @@ Anyone may contribute to Edgte IoT Architectural Design Guidelines. Discussion i
 [TBC  SYSTEMARCHAC ] and there is a regular conference call.
 See [CONTRIBUTING.md][CONTRIBUTING.md] for details.
 
-## Build Instructions
-### Requirements
-
 ## License
 This work is licensed under the Creative Commons Attribution-ShareAlike 4.0
 International License (CC-BY-SA-4.0). To view a copy of this license, visit
