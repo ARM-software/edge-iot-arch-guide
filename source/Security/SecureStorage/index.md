@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Hardware design options for Secure Storage
 
 ## Table of Contents
@@ -21,12 +23,43 @@
 ## Hardware options
 ### Storage in normal world only
 
+| Standard  | Compliancy | 
+|-----------|-----|
+| SystemReady Devicetree band    | Yes  | 
+| PSA level      | X  | 
+| PSA API     | X  | 
+
 ### Storage in eMMC/RMPB
+
+| Standard  | Compliancy | 
+|-----------|-----|
+| SystemReady Devicetree band    | Yes  | 
+| PSA level      | 1  | 
+| PSA API     | ?  | 
 
 ### Storage in external TPM
 
+| Standard  | Compliancy | 
+|-----------|-----|
+| SystemReady Devicetree band    | Yes  | 
+| PSA level      | 3  | 
+| PSA API     | X  | 
+
 ### Storage in Flash/EEPROM
 
+| Standard  | Compliancy | 
+|-----------|-----|
+| SystemReady Devicetree band    | Yes  | 
+| PSA level      | 2  | 
+| PSA API     | ?  | 
+
 ### Storage via Secure element
+
+| Standard  | Compliancy | 
+|-----------|-----|
+| SystemReady Devicetree band    | Yes  | 
+| PSA level      | 3  | 
+| PSA API     | YES  | 
+
 
 ## Conclusions
