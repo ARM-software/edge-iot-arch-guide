@@ -6,9 +6,9 @@
 - [Introduction](#introduction)
 - [Hardware options](#hardware-options)
   - [Storage in normal world only](#storage-in-normal-world-only)
-  - [Storage in eMMC/RPMB](#storage-in-emmc/rpmb)
+  - [Storage in eMMC/RPMB](#storage-in-emmcrpmb)
   - [Storage in external TPM](#storage-in-external-tpm)
-  - [Storage in Flash/EEPROM](#storage-in-flash/eeprom)
+  - [Storage in Flash/EEPROM](#storage-in-flasheeprom)
   - [Storage via Secure Element](#storage-via-secure-element)
 - [Conclusions](#conclusions)
 
@@ -35,7 +35,7 @@ As shown in figure 1, a single memory partition is used by either Linux and boot
 
 _figure 1: Storage in normal world diagram_
 
-### Storage in eMMC/RMPB
+### Storage in eMMC/RPMB
 
 | Standard  | Compliancy | 
 |-----------|-----|
