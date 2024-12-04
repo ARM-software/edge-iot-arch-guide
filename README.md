@@ -39,7 +39,7 @@ All documentation in this repository uses [Markdown][Markdown].
 All files in this project must include the relevant SPDX license identifier
 tag. Generally this means each ``.md`` file should include the line
 
- >.. SPDX-License-Identifier: CC-BY-SA-4.0
+ > `<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->`
 
 [Markdown]: https://mylearningatarm.fuseuniversal.com/learning/plans/6897
 
