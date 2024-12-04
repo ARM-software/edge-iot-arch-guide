@@ -15,7 +15,7 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 
 ## Table of Contents
 
-1. [About](source/chapter1-about)
+1. [About](source/chapter1-about.md)
 2. [Boot and installation](source/chapter2-Boot)
 3. [Automated Firmware updates](source/chapter3-FWU)
 4. [Secure World](source/chapter4-secureworld)
