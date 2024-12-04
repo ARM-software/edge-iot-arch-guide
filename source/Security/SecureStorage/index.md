@@ -25,41 +25,41 @@
 
 | Standard  | Compliancy | 
 |-----------|-----|
-| SystemReady Devicetree band    | Yes  | 
-| PSA level      | X  | 
-| PSA API     | X  | 
+| SystemReady Devicetree band    | ![yes](images/check.jpg)  | 
+| PSA level      | ![no](images/cross.jpg)   | 
+| PSA API     | ![no](images/cross.jpg)    | 
 
 ### Storage in eMMC/RMPB
 
 | Standard  | Compliancy | 
 |-----------|-----|
-| SystemReady Devicetree band    | Yes  | 
-| PSA level      | 1  | 
-| PSA API     | ?  | 
+| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
+| PSA level      | __1__ | 
+| PSA API     | __?__  | 
 
 ### Storage in external TPM
 
 | Standard  | Compliancy | 
 |-----------|-----|
-| SystemReady Devicetree band    | Yes  | 
-| PSA level      | 3  | 
-| PSA API     | X  | 
+| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
+| PSA level      | __3__  | 
+| PSA API     | ![no](images/cross.jpg)    | 
 
 ### Storage in Flash/EEPROM
 
 | Standard  | Compliancy | 
 |-----------|-----|
-| SystemReady Devicetree band    | Yes  | 
-| PSA level      | 2  | 
-| PSA API     | ?  | 
+| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
+| PSA level      | __2__  | 
+| PSA API     | __?__  | 
 
 ### Storage via Secure element
 
 | Standard  | Compliancy | 
 |-----------|-----|
-| SystemReady Devicetree band    | Yes  | 
-| PSA level      | 3  | 
-| PSA API     | YES  | 
+| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
+| PSA level      | __3__  | 
+| PSA API     | ![yes](images/check.jpg)   | 
 
 
 ## Conclusions
