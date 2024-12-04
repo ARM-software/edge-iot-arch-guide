@@ -23,14 +23,17 @@
 ## Hardware options
 ### Storage in normal world only
 
+As shown in figure 1, a single memory partition is used by either Linux and bootloaders to store variables. 
+
 | Standard  | Compliancy | 
 |-----------|-----|
 | SystemReady Devicetree band    | ![yes](images/check.jpg)  | 
 | PSA level      | ![no](images/cross.jpg)   | 
 | PSA API     | ![no](images/cross.jpg)    | 
 
-![normal world storage](images/normal_world_storage.jpg)
-_figure 1: Normal world Storage diagram_
+![Storage normal world](images/storage_normal_world.jpg)
+
+_figure 1: Storage in normal world diagram_
 
 ### Storage in eMMC/RMPB
 
