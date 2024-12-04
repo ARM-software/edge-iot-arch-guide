@@ -15,7 +15,7 @@ The latest development version is available at:
 ## Contributing
 Anyone may contribute to Edgte IoT Architectural Design Guidelines. Discussion is on the
 [TBC  SYSTEMARCHAC ] and there is a regular conference call.
-See [CONTRIBUTING.rst][CONTRIBUTING.rst] for details.
+See [CONTRIBUTING.md][CONTRIBUTING.md] for details.
 
 ## Build Instructions
 ### Requirements
@@ -27,20 +27,20 @@ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
 Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 Contributions are accepted under the same with sign-off under the Developer's
-Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.rst][CONTRIBUTING.rst].
+Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.md][CONTRIBUTING.md].
 
 A copy of the license is included in the [LICENSE][LICENSE] file.
 
 [![Creative Commons License](https://i.creativecommons.org/l/by-sa/4.0/88x31.png)](http://creativecommons.org/licenses/by-sa/4.0/)
    
-[CONTRIBUTING.rst]: ./CONTRIBUTING.rst
+[CONTRIBUTING.md]: ./CONTRIBUTING.md
 [LICENSE]: ./LICENSE
 
 ## Writers Guide
 All documentation in this repository uses [Markdown][Markdown].
 
 All files in this project must include the relevant SPDX license identifier
-tag. Generally this means each ``.rst`` file should include the line
+tag. Generally this means each ``.md`` file should include the line
 
  >.. SPDX-License-Identifier: CC-BY-SA-4.0
 
