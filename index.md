@@ -1,7 +1,6 @@
 # Edge IoT Architectural Design Guidelines
 
 **Copyright © 2017-2024 Arm Limited and Contributors.**  
-**Copyright © 2021 Western Digital Corporation or its affiliates.**  
 
 This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-sa/4.0/). To view a copy of this license, visit the link or send a letter to Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
