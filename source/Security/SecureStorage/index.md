@@ -29,6 +29,9 @@
 | PSA level      | ![no](images/cross.jpg)   | 
 | PSA API     | ![no](images/cross.jpg)    | 
 
+![normal world storage](images/normal_world_storage.jpg)
+_figure 1: Normal world Storage diagram_
+
 ### Storage in eMMC/RMPB
 
 | Standard  | Compliancy | 
