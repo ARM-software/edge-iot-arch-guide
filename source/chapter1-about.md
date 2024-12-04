@@ -6,7 +6,7 @@
 
 Description and aim of this document ....
 
-Comments or change requests can be sent to: [xxx@yyyy.xxx]().
+Comments or change requests can be sent to: [SystemArchAC chair](mailto:sac-rich-iot-edge-chair@arm.causewaynow.com)
 
 ## Guiding Principles
 
