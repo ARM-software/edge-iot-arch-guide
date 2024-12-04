@@ -4,7 +4,11 @@
 
 ## Introduction
 
-Description and aim of this document ....
+For over two decades, building software stacks for embedded devices has been a standard practice. However, evolving demands for interoperability across operating systems, richer software stacks, and adherence to stricter security regulations have introduced new complexities that many vendors find overwhelming. Recognizing these challenges, the System Architecture Advisory Committee, under Arm's SystemReady initiative, began in February 2024 to explore ways to make existing specifications and technologies more accessible.
+
+One key insight from the recent [Linaro Connect](https://www.linaro.org/connect/) 2024 event highlighted the critical need for consistent documentation to guide developers through the vast landscape of available resources. This document addresses that need by offering guidance on designing interoperable systems based on Arm’s SystemReady and PSA specification collections. It aims to serve as a collaborative resource for vendors and developers, focusing on design strategies and implementation options.
+
+Note that this document does not include code; its purpose is to provide design options always according to industry standards in embedded systems.
 
 Comments or change requests can be sent to: [SystemArchAC chair](mailto:sac-rich-iot-edge-chair@arm.causewaynow.com)
 
