@@ -40,18 +40,20 @@ An alternative to having to use OTP to store the keys is to include the keys int
 
 ![Storage eMMC RPMB](images/storage_emmc_500px.jpg)
 
-_figure 2: Storage in eMMC/RPMB_
+_figure 2: Storage in eMMC/RPMB diagram_
 
 ### Storage in external TPM
 
 ![Storage external TPM](images/storage_tpm_500px.jpg)
 
-_figure 3: Storage in external TPM_
+_figure 3: Storage in external TPM diagram_
 
 
 ### Storage in Flash/EEPROM
 
+![Storage flash](images/storage_flash_500px.jpg)
 
+_figure 3: Storage in Flash/EEPROM diagram_
 
 ### Storage via Secure element
 
