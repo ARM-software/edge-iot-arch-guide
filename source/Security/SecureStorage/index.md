@@ -44,6 +44,10 @@ _figure 2: Storage in eMMC/RPMB_
 
 ### Storage in external TPM
 
+![Storage external TPM](images/storage_tpm_500px.jpg)
+
+_figure 3: Storage in external TPM_
+
 
 ### Storage in Flash/EEPROM
 
