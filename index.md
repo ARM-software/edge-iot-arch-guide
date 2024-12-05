@@ -18,7 +18,7 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 2. [Boot and installation](source/chapter2-Boot)
 3. [Automated firmware updates](source/chapter3-FWU)
 4. [Security](source/chapter4-secureworld)
-    - [Secure storage](source/chapter4.1-securestorage)
+    - [Secure storage](source/Security/SecureStorage/index.md)
 5. [Long Term Compatibility](source/chapter5-DevicetreeIntegrity)
 6. [Linux custom-builds](source/chapter6-custombuilts)
 7. [Automation](source/chapter7-automation)
