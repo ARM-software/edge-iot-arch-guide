@@ -26,14 +26,10 @@
 In the most simple scenario, as shown in figure 1, a single storage medium is used connecting to everysingle firmware and software component, which where EFI variables live on a file within that media and u-boot is compiled to use that file.
 From a systemReady perspective, standard interfaces are used therefore ensuring interoperability between sofware modules, however this implementation choice is secure, hence failing to meet PSA requirements.
 
-| Standard  | Compliancy | 
-|-----------|-----|
-| SystemReady Devicetree band    | ![yes](images/check.jpg)  | 
-| PSA level      | ![no](images/cross.jpg)   | 
-| PSA API     | ![no](images/cross.jpg)    | 
 
 
-![Storage normal world](images/storage_normal_world.jpg)
+
+![Storage normal world](images/storage_normal_world_400px.jpg)
 
 _figure 1: Storage in normal world diagram_
 
@@ -42,38 +38,26 @@ In this design option, the actual storage has two partitions, one hosting the ro
 
 An alternative to having to use OTP to store the keys is to include the keys into the bootloader and encrypt it. That would posing a different attack surface.
 
-| Standard  | Compliancy | 
-|-----------|-----|
-| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
-| PSA level      | __1__ | 
-| PSA API     | __?__  | 
 
 ### Storage in external TPM
 
-| Standard  | Compliancy | 
-|-----------|-----|
-| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
-| PSA level      | __3__  | 
-| PSA API     | ![no](images/cross.jpg)    | 
 
 ### Storage in Flash/EEPROM
 
-| Standard  | Compliancy | 
-|-----------|-----|
-| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
-| PSA level      | __2__  | 
-| PSA API     | __?__  | 
+
 
 ### Storage via Secure element
 
-| Standard  | Compliancy | 
-|-----------|-----|
-| SystemReady Devicetree band    | ![yes](images/check.jpg)   | 
-| PSA level      | __3__  | 
-| PSA API     | ![yes](images/check.jpg)   | 
+
 
 
 ## Conclusions
+
+| Standard  | Normal World | eMMC/RPMB |   External TPM |  Flash/EEPROM | Secure Element |
+|-----------|--------------|-----------|----------------|---------------|----------------|
+| SystemReady Devicetree band    | ![yes](images/check.jpg)  | ![yes](images/check.jpg) |  ![yes](images/check.jpg) |   ![yes](images/check.jpg) |  ![yes](images/check.jpg) |
+| PSA level      | ![no](images/cross.jpg)   | __1__ | __3__ | __2__ | __3__ |
+| PSA API     | ![no](images/cross.jpg)    | __?__ |  ![no](images/cross.jpg)    | __?__ |  ![yes](images/check.jpg)   | 
 
 [SystemReady]: https://www.arm.com/architecture/system-architectures/systemready-compliance-program/systemready-devicetree-band
 [PSA]: https://www.psacertified.org/
