@@ -53,9 +53,13 @@ _figure 3: Storage in external TPM diagram_
 
 ![Storage flash](images/storage_flash_500px.jpg)
 
-_figure 3: Storage in Flash/EEPROM diagram_
+_figure 4: Storage in Flash/EEPROM diagram_
 
 ### Storage via Secure element
+
+![Storage secure element](images/storage_secure_element_500px.jpg)
+
+_figure 5: Storage via secure element diagram_
 
 
 
