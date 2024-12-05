@@ -23,7 +23,8 @@
 ## Hardware options
 ### Storage in normal world only
 
-In the most simple scenario, as shown in figure 1, a single storage medium is used connect to everything, where EFI variables live on a file within that media and u-boot is compiled to use that file.
+In the most simple scenario, as shown in figure 1, a single storage medium is used connecting to everysingle firmware and software component, which where EFI variables live on a file within that media and u-boot is compiled to use that file.
+From a systemReady perspective, standard interfaces are used therefore ensuring interoperability between sofware modules, however this implementation choice is secure, hence failing to meet PSA requirements.
 
 | Standard  | Compliancy | 
 |-----------|-----|
@@ -31,7 +32,6 @@ In the most simple scenario, as shown in figure 1, a single storage medium is us
 | PSA level      | ![no](images/cross.jpg)   | 
 | PSA API     | ![no](images/cross.jpg)    | 
 
-From a systemReady perspective, standard interfaces are used therefore ensuring interoperability between sofware modules, however this implementation choice is secure, hence failing to meet PSA requirements.
 
 ![Storage normal world](images/storage_normal_world.jpg)
 
