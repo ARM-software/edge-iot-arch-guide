@@ -77,11 +77,16 @@ _figure 5: Storage via secure element diagram_
 
 ## Conclusions
 
+As a conclusion, SystemReady provides security interoperability between software components but does not assures security as implementation is not taken into account; implementation and therefore security 'itself' is measured through PSA levels. The different options described provides different levels of security at a different engineering cost that must be considered and evaluated from a product needs perspective. Table 1 shows a comparison between the different options described in this document.
+
+
 | Standard  | Normal World | eMMC/RPMB |   External TPM |  Flash/EEPROM | Secure Element |
 |-----------|--------------|-----------|----------------|---------------|----------------|
 | SystemReady Devicetree band    | ![yes](images/check.jpg)  | ![yes](images/check.jpg) |  ![yes](images/check.jpg) |   ![yes](images/check.jpg) |  ![yes](images/check.jpg) |
 | PSA level      | ![no](images/cross.jpg)   | __1__ | __3__ | __2__ | __3__ |
 | PSA API     | ![no](images/cross.jpg)    | __?__ |  ![no](images/cross.jpg)    | __?__ |  ![yes](images/check.jpg)   | 
+
+_table 1: hardware options comparison_
 
 [SystemReady]: https://www.arm.com/architecture/system-architectures/systemready-compliance-program/systemready-devicetree-band
 [PSA]: https://www.psacertified.org/
