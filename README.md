@@ -1,7 +1,5 @@
 # Edge IoT Architectural Design Guidelines
 
-[to include CI runner result here]
-
 The Edge IoT Architectural design guide is a collection of design options for developers who seek guidance on how to comply with SystemReady requirements but find overwhelming the sea of available technologies and specifications.
 SystemReady is a compliance programe aiming to enable inter-operability between SoCs, hardware platforms, firmware implementations, and operating system distributions, establishing consistent boot ABIs and behaviour so that supporting new hardware platforms does not require custom engineering work.
 
