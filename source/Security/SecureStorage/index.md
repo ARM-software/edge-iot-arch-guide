@@ -23,18 +23,21 @@
 ## Hardware options
 ### Storage in normal world only
 
-In the most simple scenario, as shown in figure 1, a single storage medium is used connecting to everysingle firmware and software component, which where EFI variables live on a file within that media and u-boot is compiled to use that file.
-From a systemReady perspective, standard interfaces are used therefore ensuring interoperability between sofware modules, however this implementation choice is secure, hence failing to meet PSA requirements.
+In the simplest scenario, as shown in Figure 1, a single storage medium is used, connecting to every firmware and software component. EFI variables reside in a file on that medium, and U-Boot is compiled to access that file.
 
+From a SystemReady perspective, standard interfaces are used, ensuring interoperability between software modules. However, this implementation does not provides security by design, therefore it does not meet PSA requirements.
 
 ![Storage normal world](images/storage_normal_world_500px.jpg)
 
 _figure 1: Storage in normal world diagram_
 
 ### Storage in eMMC/RPMB
-In this design option, the actual storage has two partitions, one hosting the rootfs and the other hosting the efi variables, in such a way that the one hosting variables is hidden from the normal-world. The downside to this, is the access to this storage is done through Linux, therefore an OTP is essential to hold the keys locking and unlocking the access to RPMB. this is certainly more secure as the first option and it would be passing PSA level 1 as some sort of secure storage is present but it definetly won't achieve PSA level 2 as this configuration implies all the software stack is related to the access to the secure storage so the whole software stack is subject to audition, which is very time consuming and everytime a firmware of software update happens another audit should be carried out, making it simply impractical to achieve PSA level 2. In terms of PSA API it could apply if fTPM or Trusted sources were used.  
 
-A tempting alternative to having to use OTP to store the keys is for TF-A to encrypt the bootloader so keys are assumed to be protected, however then your design will be open to another level of attacks as the key in bootloader would cover a group of devices rather than being independent keys per device, and this may not even comply with PSA level 1
+In this design option, the storage has two partitions: one hosting the root filesystem (rootfs) and the other hosting the EFI variables. The partition hosting the variables is hidden from the normal world. The downside is that access to this storage is managed through Linux, making an OTP essential to store the keys that lock and unlock access to the RPMB. While this design is more secure than the first option and would meet PSA Level 1 requirements due to the presence of secure storage, it would not meet PSA Level 2. This is because the entire software stack involved in accessing the secure storage would be subject to auditing, which is simply too much to audit. Additionally, every firmware or software update would require a new audit, making it impractical to achieve PSA Level 2.
+
+In terms of the PSA API certified, it could apply if fTPM or trusted sources were used.
+
+A tempting alternative to using OTP to store the keys is for TF-A to encrypt the bootloader, assuming the keys are protected. However, this approach introduces a new level of risk, as the key in the bootloader would cover a group of devices rather than having unique keys for each device. This approach may not even comply with PSA Level 1.
 
 ![Storage eMMC RPMB](images/storage_emmc_500px.jpg)
 
@@ -42,8 +45,11 @@ _figure 2: Storage in eMMC/RPMB diagram_
 
 ### Storage in external TPM
 
-In this case described in figure 3, all the secure services, including secure storage, are handled by the TPM, however because the TPM is not embedded within the SoC there's a risk the bus connecting the TPM to the SoC can be snooped, unless the bus is using locking mechanisms and encrypted communications, which then will require an OTP to store the encryption keys for that bus communications. This also includes problems when using Linux OS as each application whenever needs to use the TPM they will have to have an unlocking key, which is impractical.
-Nevertheless this design could achieve PSA Level 3, because the audit would be restricted to just the API handling the bus communications between the SoC and the TPM, which is a manageable piece of code to audit. On the other hand, given this design would not be compliant to PSA API as using an external TPM.
+In the scenario described in Figure 3, all secure services, including secure storage, are handled by the TPM. However, since the TPM is not embedded within the SoC, there is a risk that the bus connecting the TPM to the SoC could be snooped. This risk can be mitigated if the bus uses locking mechanisms and encrypted communications, which would require an OTP to store the encryption keys for the bus communication.
+
+Another challenge arises when using a Linux OS. Each application that needs to access the TPM would require an unlocking key, which is impractical.
+
+Despite these challenges, this design could achieve PSA Level 3 because the audit would be limited to the API handling bus communications between the SoC and the TPM—a manageable amount of code to audit. However, this design would not comply with the PSA API, as it relies on an external TPM.
 
 ![Storage external TPM](images/storage_tpm_500px.jpg)
 
@@ -51,11 +57,11 @@ _figure 3: Storage in external TPM diagram_
 
 
 ### Storage in Flash/EEPROM
-In the next level, a Flash or EEPROM only accessible from Secure world, can be treated in a similar way where an OTP can be used to store the keys handling the locking and encryption of the bus connecting the SoC to the Flash/EEPROM.
+At the next level, a Flash or EEPROM accessible only from the secure world can be managed similarly, with an OTP used to store the keys for locking and encrypting the bus connecting the SoC to the Flash/EEPROM.
 
-In this case, PSA Level 2 certification could be achieved as code auditing is limited to the trusted world and Flash contents access, which is a practical thing to do given the bootloader and trusted firmware is a fairly fix asset not expected to be updated so often and changes to the OS would not invalidate PSA certification.
+In this scenario, PSA Level 2 certification could be achieved, as code auditing would be limited to the trusted world and Flash access. This is practical because the bootloader and trusted firmware are relatively static components that are not frequently updated, meaning changes to the OS would not invalidate PSA certification.
 
-as a difference from previous scenario, PSA API could be used if fTPM and trusted services are chosen.
+Unlike the previous scenario, the PSA API could be used if fTPM and trusted services are implemented.
 
 ![Storage flash](images/storage_flash_500px.jpg)
 
@@ -63,10 +69,11 @@ _figure 4: Storage in Flash/EEPROM diagram_
 
 ### Storage via Secure element
 
-The final design option, shown in figure 5, is when an internal secure element to the SoC is used to provide secure services. Given this is using an internal element, there's no bus snoop and there's no need to lock and ecrypt the communications to and from the secure flash. At this point the OTP still can be used to store keys, although it is not estrictly necessary to use them to protect the bus connnecting the Flash, but it still can be used the de-encrypt some other software components as the first stage bootloaders.
-In terms of PSA certification Level 2 is not a problem and level 3 is also achievable, given the secure services are well delimited within this enclave, also it would also be using PSA APIs.
+The final design option, shown in Figure 5, involves using an internal secure element within the SoC to provide secure services. Since this uses an internal element, there is no risk of bus snooping, and there is no need to lock or encrypt communications with the secure Flash. While an OTP can still be used to store keys, it is not strictly necessary for protecting the bus connecting to the Flash. However, it can still be useful for decrypting other software components, such as the first-stage bootloaders.
 
-As an alternative, the secure element, could be replaced by an internal TPM to the SoC, but it wouldn't be PSA API. 
+In terms of PSA certification, achieving Level 2 is straightforward, and Level 3 is also attainable, as the secure services are well-contained within the enclave. Additionally, this design would support the use of PSA APIs.
+
+As an alternative, the secure element could be replaced by an internal TPM within the SoC, though it would not be compliant with the PSA API.
 
 ![Storage secure element](images/storage_secure_element_500px.jpg)
 
@@ -77,7 +84,7 @@ _figure 5: Storage via secure element diagram_
 
 ## Conclusions
 
-As a conclusion, SystemReady provides security interoperability between software components but does not assures security as implementation is not taken into account; implementation and therefore security 'itself' is measured through PSA levels. The different options described provides different levels of security at a different engineering cost that must be considered and evaluated from a product needs perspective. Table 1 shows a comparison between the different options described in this document.
+In conclusion, SystemReady ensures interoperability between software components but does not guarantee security, as it does not account for implementation. Security is evaluated through PSA levels, which measure the design at level 1 and implementation itself at level 2 and 3. The various design options discussed offer different levels of security at varying engineering costs, which must be carefully considered based on the product's specific needs. Table 1 provides a comparison of the options described in this document.
 
 
 | Standard  | Normal World | eMMC/RPMB |   External TPM |  Flash/EEPROM | Secure Element |
