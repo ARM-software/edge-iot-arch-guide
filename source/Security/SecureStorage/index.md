@@ -38,6 +38,9 @@ In this design option, the actual storage has two partitions, one hosting the ro
 
 An alternative to having to use OTP to store the keys is to include the keys into the bootloader and encrypt it. That would posing a different attack surface.
 
+![Storage eMMC RPMB](images/storage_emmc_400px.jpg)
+
+_figure 2: Storage in eMMC/RPMB_
 
 ### Storage in external TPM
 
