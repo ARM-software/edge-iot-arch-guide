@@ -29,7 +29,7 @@ From a systemReady perspective, standard interfaces are used therefore ensuring 
 
 
 
-![Storage normal world](images/storage_normal_world_400px.jpg)
+![Storage normal world](images/storage_normal_world_500px.jpg)
 
 _figure 1: Storage in normal world diagram_
 
@@ -38,7 +38,7 @@ In this design option, the actual storage has two partitions, one hosting the ro
 
 An alternative to having to use OTP to store the keys is to include the keys into the bootloader and encrypt it. That would posing a different attack surface.
 
-![Storage eMMC RPMB](images/storage_emmc_400px.jpg)
+![Storage eMMC RPMB](images/storage_emmc_500px.jpg)
 
 _figure 2: Storage in eMMC/RPMB_
 
