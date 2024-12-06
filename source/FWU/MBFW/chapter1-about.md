@@ -55,6 +55,7 @@ Scenarios include:
 
 If the firmware passes acceptance tests, it becomes permanent. The OS uses an acceptance capsule ([OS-Directed FW Image Acceptance](#os-directed-fw-image-acceptance)) to finalize this.
 
+![Transactional updates](images/transactional_updates.jpg)
 
 ### Rollback Protection
 
