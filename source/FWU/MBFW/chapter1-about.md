@@ -73,13 +73,4 @@ Brick protection addresses issues during updates and hardware failures. Recommen
 - Restore a partition to a working state if an update fails.
 - Ensure watchdog timers are active during updates.
 
----
-
-```plantuml
-[*] -> StableA
-StableA #6b8724 ---> StagingB #CE5756: CapsuleUpdate()
-StagingB -> StableA: Aborted or Failed
-StagingB -> TrialB #0093a6 : Trial Reboot
-TrialB -> StableB #7773cf : Success
-TrialB -> StableA : Failure
-StableB ---> StableA : Rollback (if supported)
+![brick protection](images/brick_protection.jpg)
