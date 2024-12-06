@@ -91,7 +91,7 @@ In conclusion, SystemReady ensures interoperability between software components 
 |-----------|--------------|-----------|----------------|---------------|----------------|
 | SystemReady Devicetree band    | ![yes](images/check.jpg)  | ![yes](images/check.jpg) |  ![yes](images/check.jpg) |   ![yes](images/check.jpg) |  ![yes](images/check.jpg) |
 | PSA level      | ![no](images/cross.jpg)   | __1__ | __3__ | __2__ | __3__ |
-| PSA API     | ![no](images/cross.jpg)    | __?__ |  ![no](images/cross.jpg)    | __?__ |  ![yes](images/check.jpg)   | 
+| PSA API     | ![no](images/cross.jpg)    | __it may__ |  ![no](images/cross.jpg)    | __it may__ |  ![yes](images/check.jpg)   | 
 
 _table 1: hardware options comparison_
 
