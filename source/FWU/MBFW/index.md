@@ -8,5 +8,4 @@
 2. [Chapter 2 - UEFI](chapter2-uefi.md)  
 3. [Chapter 3 - Firmware Update](chapter3-fwupdate.md)  
 4. [Chapter 4 - Failsafe](chapter4-failsafe.md)  
-5. [Conventions](conventions.md)  
 6. [References](references.md)
