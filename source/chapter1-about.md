@@ -16,7 +16,7 @@ Comments or change requests can be sent to: [SystemArchAC chair](mailto:sac-rich
 
 This section explains the goals and guiding principles behind the document:
 
-- ** neutral point of view **  All content must be written from a neutral point of view and without a commercial or promotional bias.  
+- **neutral point of view:**  All content must be written from a neutral point of view and without a commercial or promotional bias.  
 - **Principle 2:** description  
 - **Principle 3:** description  
 
