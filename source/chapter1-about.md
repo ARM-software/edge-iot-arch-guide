@@ -16,10 +16,10 @@ Comments or change requests can be sent to: [SystemArchAC chair](mailto:sac-rich
 
 This section explains the goals and guiding principles behind the document:
 
-- **neutral point of view:**  All content must be written from a neutral point of view and without a commercial or promotional bias.  
-- **Principle 2:** description  
-- **Principle 3:** description  
-
+- **Design options build upon existing principles driving SystemReady:** 
+- **Architcture specific:** Only Arm based systems 
+- **Neutral point of view:**  All content must be written from a neutral point of view and without a commercial or promotional bias.  
+- **Design for common Edge IoT systems:** Topics and design options will be targeting devices intended to be used as Edge IoT devices, not embdeded servers or servers.
 
 ## Scope
 
