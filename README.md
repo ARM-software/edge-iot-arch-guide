@@ -45,5 +45,5 @@ In general, try to keep the text width to at most 80 columns.
 Try to write footnotes contents as close a possible to the places referencing
 them.
 
-Main branch is not intended for development, each chapter is developed on a specific branch and 
-merged back into main upon PR approval. Therefore main branch is locked.
+Images should be .svg format if possible, alternatively .png is also accepted.
+UML graphics are not compatible with our publication flow, hence won't be accepted.
