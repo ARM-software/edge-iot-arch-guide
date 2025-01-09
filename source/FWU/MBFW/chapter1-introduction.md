@@ -16,9 +16,9 @@ This document focuses on the robustness of the update process to achieve:
 
 Unexpected issues, such as hardware revision differences, language configuration, and operational conditions, may occur despite extensive testing. Therefore, the OS must verify and approve updates before committing them. This is referred to as **transactional updates** throughout the document.
 
-The aim of this document is to provide guidelines to protect devices against bricking and rollback attacks. Updates may occur from the non-secure world (non-secure firmware) or the secure world (secure firmware), depending on implementation and hardware requirements.
+The aim of this document is to provide design guidelines to protect devices against bricking and rollback attacks. Updates may occur from the non-secure world (non-secure firmware) or the secure world (secure firmware), depending on implementation and hardware requirements.
 
-*Comments or change requests can be sent to `boot-architecture@lists.linaro.org`.*
+*Comments or change requests can be sent to [linaro](mailto:boot-architecture@lists.linaro.org) or [SystemArchAC chair](mailto:sac-rich-iot-edge-chair@arm.causewaynow.com)*
 
 
 ## Scope
