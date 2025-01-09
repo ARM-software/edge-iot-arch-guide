@@ -1,7 +1,5 @@
 <!--SPDX-License-Identifier:** CC-BY-SA-4.0-->
-# About This Document
-
-## Introduction
+# Introduction
 
 Firmware updates in the Arm ecosystem have historically been handled by proprietary methods. Standardizing firmware behavior and lifecycle is necessary to create broader business opportunities in the ecosystem.
 
