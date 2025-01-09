@@ -1,9 +1,11 @@
 # Edge IoT Architectural Design Guidelines
 
-[to include CI runner result here]
-
-The Edge IoT Architectural design guide is a collection of design options for developers who seek guidance on how to comply with SystemReady requirements but find overwhelming the sea of available technologies and specifications.
-SystemReady is a compliance programe aiming to enable inter-operability between SoCs, hardware platforms, firmware implementations, and operating system distributions, establishing consistent boot ABIs and behaviour so that supporting new hardware platforms does not require custom engineering work.
+The Edge IoT Architectural design guide is a collection of design options for developers 
+who seek guidance on how to comply with SystemReady requirements but find overwhelming the 
+sea of available technologies and specifications.
+SystemReady is a compliance programe aiming to enable inter-operability between SoCs, 
+hardware platforms, firmware implementations, and operating system distributions, establishing 
+consistent boot ABIs and behaviour so that supporting new hardware platforms does not require custom engineering work.
 
 Released "Edge IoT Architecture design guide" PDFs can be found here:
 
@@ -24,7 +26,8 @@ http://creativecommons.org/licenses/by-sa/4.0/ or send a letter to
 Creative Commons, PO Box 1866, Mountain View, CA 94042, USA.
 
 Contributions are accepted under the same with sign-off under the Developer's
-Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , see [CONTRIBUTING.md][CONTRIBUTING.md].
+Certificate of Origin. For more on contributing to Edge IoT Achitecture Design Guide , 
+see [CONTRIBUTING.md][CONTRIBUTING.md].
 
 A copy of the license is included in the [LICENSE][LICENSE] file.
 
@@ -46,3 +49,11 @@ tag. Generally this means each ``.md`` file should include the line
 In general, try to keep the text width to at most 80 columns.
 Try to write footnotes contents as close a possible to the places referencing
 them.
+
+Images should be .svg format if possible, alternatively .png is also accepted.
+UML graphics are not compatible with our publication flow, hence won't be accepted.
+
+The main branch is not intended for development. New topics should be merged into the 
+main branch from a fork, and potentially from a local branch named "new_topic/[topic name]." 
+If new topics are to be developed collaboratively, share the fork and branch with 
+collaborators and create a Pull Request when the work is in a "good enough" state.

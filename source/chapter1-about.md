@@ -16,14 +16,16 @@ Comments or change requests can be sent to: [SystemArchAC chair](mailto:sac-rich
 
 This section explains the goals and guiding principles behind the document:
 
-- **Principle 1:** description  
-- **Principle 2:** description  
-- **Principle 3:** description  
-
+- **Upon existing principles driving SystemReady:** Design options provided will be following guiding principles behind SystemReady, i.e. interoperability between platforms and OSes.
+- **Architcture specific:** Only Arm based systems will be targetted in this document
+- **Neutral point of view:**  All content must be written from a neutral point of view and without a commercial or promotional bias.  
+- **Design for common Edge IoT systems:** Topics and design options will be targeting devices intended to be used as Edge IoT devices, not embdeded servers or servers.
 
 ## Scope
 
-describe what's acceptable and what it is not
+This document is a collection of unrelated design options, i.e. this document is not intended to be read from cover to cover. Each chapter addresses a separate topic that may not relate to others. The chapters present various alternatives, enabling designers to make informed decisions about which option best fits their business needs while understanding the potential implications of their choices.
+
+While SystemReady focuses on the critical point of interoperability between platforms and operating systems, the scope of this document includes design options at any layer within the software stack. However, these options are considered only when this interoperability boundary is crossed, such as when upper software stack layers depend on services provided by the platform in the lower layers.
 
 ## Conventions Used in this Document
 

@@ -97,3 +97,5 @@ _table 1: hardware options comparison_
 
 [SystemReady]: https://www.arm.com/architecture/system-architectures/systemready-compliance-program/systemready-devicetree-band
 [PSA]: https://www.psacertified.org/
+=======
+
