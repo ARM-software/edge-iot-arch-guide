@@ -11,6 +11,7 @@
   - [Storage in Flash/EEPROM](#storage-in-flasheeprom)
   - [Storage via Secure Element](#storage-via-secure-element)
 - [Conclusions](#conclusions)
+- [References](#references)
 
 ## Introduction  
   
@@ -95,7 +96,23 @@ In conclusion, SystemReady ensures interoperability between software components 
 
 _table 1: hardware options comparison_
 
+## References
+
+[SystemReady Devicetree] [SystemReady](https://www.arm.com/architecture/system-architectures/systemready-compliance-program/systemready-devicetree-band), November 2024, [Arm Limited](http://arm.com)
+
+[PSA Certified] [PSA](https://www.psacertified.org/)
+
+[PSA spec] [Platform Security Architecture](https://www.arm.com/architecture/security-features/platform-security), July 2024, [Arm Limited](http://arm.com)
+
+[PSA API] [Platform Security Architecture APIs](https://arm-software.github.io/psa-api/), August 2023, [Arm Limited](http://arm.com)
+
+[Trusted Services] [Trusted Services](https://www.trustedfirmware.org/projects/trusted-services/)
+
+
+
+
 [SystemReady]: https://www.arm.com/architecture/system-architectures/systemready-compliance-program/systemready-devicetree-band
 [PSA]: https://www.psacertified.org/
-=======
+
+
 
