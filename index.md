@@ -11,6 +11,7 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 | Date         | Issue | Changes |
 |--------------|-------|---------|
 | 4 Dec 2024  | 0.1  | Document creation |
+| 9 Jan 2025  | 0.2  | MBFW topic added <br> Secure Storage added |
 
 ## Table of Contents
 
