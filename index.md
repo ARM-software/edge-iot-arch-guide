@@ -24,4 +24,3 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 5. [Long Term Compatibility](source/chapter5-DevicetreeIntegrity)
 6. [Linux custom-builds](source/chapter6-custombuilts)
 7. [Automation](source/chapter7-automation)
-8.
