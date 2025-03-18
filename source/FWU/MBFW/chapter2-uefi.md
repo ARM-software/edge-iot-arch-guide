@@ -45,14 +45,12 @@ A value of `0x3fff` implies that the image has not been accepted. The OS must ex
 
 The UEFI implementation informs the OS of the current FW images via the ESRT.
 
-The OS can request a FW downgrade by installing the following signed capsule:
+The OS can request a FW downgrade by installing the following capsule:
 
 - `CapsuleGuid` = `acd58b4b-c0e8-475f-99b5-6b3f7e07aaf0`
 - `HeaderSize` = `sizeof(EFI_CAPSULE_HEADER)`
 - `Flags` = `0`
 - `CapsuleImageSize` = `sizeof(EFI_CAPSULE_HEADER)`
-
-**Note:** The image acceptance capsule must be authenticated. Details TBD.
 
 When UEFI receives this capsule, it will:
 
@@ -78,9 +76,6 @@ The OS accepts each image with pending acceptance using a capsule composed of an
 - `HeaderSize` = `sizeof(EFI_CAPSULE_HEADER)`
 - `Flags` = `0`
 - `CapsuleImageSize` = `sizeof(EFI_CAPSULE_HEADER) + sizeof(UUID)`
-
-**Note:** The image acceptance capsule must be authenticated. Details TBD.
-
 
 ## Update Permission Verification
 
