@@ -1,0 +1,38 @@
+---
+name: 'Edge IoT Arch Guide CI Build'
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches: '**'
+    tags: 'v*'
+
+  pull_request:
+    branches: main
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+      - name: 'Identify Version'
+        run: |
+          echo "EIAG_VERSION=$(git describe --always)" >> $GITHUB_ENV
+
+      - name: 'Install Ubuntu required packages'
+        run: |
+          sudo apt-get update
+          sudo apt-get -y install pandoc texlive
+
+      - name: 'Generate documents'
+        run: |
+          make
+
+      - name: 'Upload artifacts'
+        uses: actions/upload-artifact@v4
+        with:
+          name: edge-iot-arch-guide-${{ env.EIAG_VERSION }}
+          path: |
+            edge-iot-arch-guide*
