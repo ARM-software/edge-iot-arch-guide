@@ -139,8 +139,6 @@ The FWU metadata is described in Section 4.1 of [FWU]_.
    execution context.  In this case, the activations and returns between FWU and \
    UEFI are internal to the UEFI implementation.
 
-![OS fails](os_fails.jpg)
-
 1. Platform boots with the new FW
 2. From the TFA boot report [FWU]_, UEFI verifies that platform booted from the intended bank
 3. OS loader obtains the ESRT from UEFI
