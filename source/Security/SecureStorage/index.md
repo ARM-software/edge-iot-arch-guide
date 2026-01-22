@@ -17,9 +17,9 @@
   
 1. [SystemReady][SystemReady] specifies the APIs firmware must expose to an OS in order to support Secure Boot use cases; however, it does not enforce that the APIs are actually implemented in a secure manner.
 2. [PSA][PSA] certification specifies a number of runtime security features that should be supported. It also attempts to verify they have been implemented in a secure manner.
-   - At Level 2 and above this involves a full code audit of everything below the security API​
-   - The API is only specified if you wish to gain the additional [PSA Level2 API](https://arm-software.github.io/psa-api/) certification.​
-3. This means your hardware choice is wide and not fixed but certain choices will restrict what security level certifications you could achieve​
+   - At Level 2 and above this involves a full code audit of everything below the security API
+   - The API is only specified if you wish to gain the additional [PSA Level2 API](https://arm-software.github.io/psa-api/) certification.
+3. This means your hardware choice is wide and not fixed but certain choices will restrict what security level certifications you could achieve
 
 ## Hardware options
 ### Storage in normal world only
