@@ -48,7 +48,7 @@ Firmware updates are independent of OS upgrades. If the OS fails after a firmwar
 
 Scenarios include:
 
-1. **Firmware Acceptance Test Fails:** The OS requests a downgrade using the [revert-sec](#revert-sec) methodology.
+1. **Firmware Acceptance Test Fails:** The OS requests a downgrade using the revert-sec methodology.
 2. **OS Boot Failure:** The Normal World firmware counts failed boot attempts. After a threshold, it reverts to the previous firmware bank.
 
 If the firmware passes acceptance tests, it becomes permanent. The OS uses an acceptance capsule ([OS-Directed FW Image Acceptance](#os-directed-fw-image-acceptance)) to finalize this.
