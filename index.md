@@ -16,11 +16,12 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 ## Table of Contents
 
 1. [About](source/chapter1-about.md)
-2. [Boot and installation](source/chapter2-Boot)
-3. [Automated firmware updates](source/chapter3-FWU)
+2. Boot and installation
+    - [HTTP boot](source/http-boot/pmem_node.md)
+4. Automated firmware updates
     - [Multi Bank Firmware Update](source/FWU/MBFW/index.md)
-4. [Security](source/chapter4-secureworld)
+5. Security
     - [Secure storage](source/Security/SecureStorage/index.md)
-5. [Long Term Compatibility](source/chapter5-DevicetreeIntegrity)
-6. [Linux custom-builds](source/chapter6-custombuilts)
-7. [Automation](source/chapter7-automation)
+6. Long Term Compatibility
+7. Linux custom-builds
+8. Automation
