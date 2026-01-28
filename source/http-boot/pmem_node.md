@@ -25,7 +25,7 @@ describe Persistent Memory (PMEM) regions, allowing the OS to expose the image
 as a ramdisk.
 
 On Device Tree (DT) platforms, PMEM devices can be described using
-[PMEM DT bindings](https://www.kernel.org/doc/Documentation/devicetree/bindings/pmem/pmem-region.txt),
+[Device Tree PMEM binding](https://www.kernel.org/doc/Documentation/devicetree/bindings/pmem/pmem-region.yaml),
 enabling similar functionality without ACPI.
 
 On DT–based systems, firmware describes the persistent memory
@@ -126,7 +126,7 @@ live or net-installer images, including:
 ## References & Links
 
 - [PMEM support is in U-Boot since v2025.07](https://lore.kernel.org/u-boot/20250317083402.412310-1-sughosh.ganu@linaro.org/)
-- [Device Tree PMEM binding](https://www.kernel.org/doc/Documentation/devicetree/bindings/pmem/pmem-region.txt)
+- [Device Tree PMEM binding](https://www.kernel.org/doc/Documentation/devicetree/bindings/pmem/pmem-region.yaml)
 - [LIBNVDIMM subsystem (kernel documentation)](https://docs.kernel.org/driver-api/nvdimm/nvdimm.html)
 - [Linux kernel PMEM NVDIMM documentation](https://nvdimm.docs.kernel.org/)
 - [Don't call __add_pages() for reserved memory](https://gitlab.com/ilias.apalodimas/net-next/-/commit/0e1b2d01511e59008ef21c3c84cd347780cd0a51)
