@@ -31,7 +31,8 @@ enabling similar functionality without ACPI.
 On DT–based systems, firmware describes the persistent memory
 region using the standard PMEM DT binding. The kernel discovers this
 region during early boot and registers it via the LIBNVDIMM subsystem,
-making the contents available to userspace.
+which then exposes it as a pmem block device (e.g. /dev/pmem0)
+allowing a filesystem to be mounted on it.
 
 The kernel must include drivers required for PMEM devices support.
 
