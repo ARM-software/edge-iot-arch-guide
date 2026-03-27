@@ -4,6 +4,7 @@ NAME = edge-iot-arch-guide
 TXT = $(NAME).txt
 PDF = $(NAME).pdf
 HTML = $(NAME).html
+CHUNKEDHTML = $(NAME)-chunkedhtml
 
 # List sources files here; order is meaningful.
 MARKDOWNS = \
@@ -19,7 +20,7 @@ MARKDOWNS = \
 
 PANDOC_OPTS = -f markdown+rebase_relative_paths
 
-all: $(TXT) $(MAN) $(PDF) $(HTML)
+all: $(TXT) $(MAN) $(PDF) $(HTML) $(CHUNKEDHTML)
 
 $(TXT):	$(MARDOWNS)
 	pandoc -o $@ $(MARKDOWNS) $(PANDOC_OPTS) -t plain
@@ -27,5 +28,10 @@ $(TXT):	$(MARDOWNS)
 $(PDF) $(HTML):	$(MARDOWNS)
 	pandoc -o $@ $(MARKDOWNS) $(PANDOC_OPTS)
 
+$(CHUNKEDHTML):	$(MARDOWNS)
+	rm -fr $@
+	pandoc -o $@ $(MARKDOWNS) $(PANDOC_OPTS) \
+		--metadata title="Edge IoT Arch Guide" -t chunkedhtml
+
 clean:
-	rm -fr $(TXT) $(PDF) $(HTML)
+	rm -fr $(TXT) $(PDF) $(HTML) $(CHUNKEDHTML)
