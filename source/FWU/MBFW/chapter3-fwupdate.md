@@ -90,10 +90,9 @@ The FWU metadata is described in Section 4.1 of [FWU]_.
 
 ### Post-capsule install -- Reboot success
 
-
-.. note:: When the Normal world controls flash, FWU and UEFI are within the same \
-   execution context.  In this case, the activations and returns between FWU and \
-   UEFI are internal to the UEFI implementation.
+> Note: When the Normal world controls flash, FWU and UEFI are within the same
+> execution context.  In this case, the activations and returns between FWU and
+> UEFI are internal to the UEFI implementation.
 
 ![post-capsule install](images/post-capsule_install.jpg)
 
@@ -115,9 +114,9 @@ The FWU metadata is described in Section 4.1 of [FWU]_.
 ### Post-capsule install -- Reboot fails before UEFI
 
 
-.. note:: When the Normal world controls flash, FWU and UEFI are within the same \
-   execution context.  In this case, the activations and returns between FWU and \
-   UEFI are internal to the UEFI implementation.
+> Note: When the Normal world controls flash, FWU and UEFI are within the same
+> execution context.  In this case, the activations and returns between FWU and
+> UEFI are internal to the UEFI implementation.
 
 ![reboot fails](images/reboot_fail.jpg)
 
@@ -134,10 +133,9 @@ The FWU metadata is described in Section 4.1 of [FWU]_.
 
 ### Post-capsule install -- OS fails to boot
 
-
-.. note:: When the Normal world controls flash, FWU and UEFI are within the same \
-   execution context.  In this case, the activations and returns between FWU and \
-   UEFI are internal to the UEFI implementation.
+> Note: When the Normal world controls flash, FWU and UEFI are within the same
+> execution context.  In this case, the activations and returns between FWU and
+> UEFI are internal to the UEFI implementation.
 
 1. Platform boots with the new FW
 2. From the TFA boot report [FWU]_, UEFI verifies that platform booted from the intended bank
@@ -148,10 +146,9 @@ The FWU metadata is described in Section 4.1 of [FWU]_.
 
 ### Post-capsule install -- Image fails OS test
 
-
-.. note:: When the Normal world controls flash, FWU and UEFI are within the same \
-   execution context.  In this case, the activations and returns between FWU and \
-   UEFI are internal to the UEFI implementation.
+> Note: When the Normal world controls flash, FWU and UEFI are within the same
+> execution context.  In this case, the activations and returns between FWU and
+> UEFI are internal to the UEFI implementation.
 
 ![Image fails](images/image_fails.jpg)
 
