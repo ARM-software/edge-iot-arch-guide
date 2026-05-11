@@ -10,6 +10,7 @@ CHUNKEDHTML = $(NAME)-chunkedhtml
 MARKDOWNS = \
 	index.md \
 	source/chapter1-about.md \
+	source/http-boot/pmem_node.md \
 	source/FWU/MBFW/index.md \
 	source/FWU/MBFW/chapter2-uefi.md \
 	source/FWU/MBFW/chapter1-introduction.md \
