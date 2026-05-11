@@ -17,7 +17,7 @@ This work is licensed under the [Creative Commons Attribution-ShareAlike 4.0 Int
 
 1. [About](source/chapter1-about.md)
 2. Boot and installation
-    - [HTTP boot](source/http-boot/pmem_node.md)
+    - [HTTP Boot with ramdisk and Devicetree pmem node](source/http-boot/pmem_node.md)
 4. Automated firmware updates
     - [Multi Bank Firmware Update](source/FWU/MBFW/index.md)
 5. Security
