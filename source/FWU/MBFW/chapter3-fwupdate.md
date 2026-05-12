@@ -21,9 +21,9 @@ When the flash is owned by the Secure World, the FMP communicates with the FWU I
 in the secure world using the [FFA]_ Firmware Update ABI [FWU]_
 
 The FWU Implementation provides Non-secure firmware with a list of all FW images handled by it.  The information
-is provided via the image directory [#FFANote]_.
+is provided via the image directory [^FFANote].
 
-.. [#FFANote] image directory is a stream of data structured as an array of image entries [FWU]_.
+[^FFANote]: image directory is a stream of data structured as an array of image entries [FWU]_.
 
 ### FMP interface for Secure World updates
 
