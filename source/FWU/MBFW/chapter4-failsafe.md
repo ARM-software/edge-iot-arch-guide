@@ -28,12 +28,10 @@ The second level of fail-safe boot ensures that the system is not permanently le
 The early bootloader is responsible for loading the subsequent firmware stages into RAM.
 The early bootloader loads the active bank by default. If the active bank fails to boot, the early bootloader will increment a failed_boot counter. When the value in failed_boot counter is higher that the *max_failed_boots* threshold, then the early bootloader must select the previous_active bank.
 
-These state transitions are modelled in :ref:`Firmware fail-safe <fw_fail-safe>`. In this diagram the early stage bootloader, when the platform fails to boot for more than *max_failed_boots*, will select a bank other than the current active one.
+These state transitions are modelled in the Early bootloader fail-safe state machine diagram below. In this diagram the early stage bootloader, when the platform fails to boot for more than *max_failed_boots*, will select a bank other than the current active one.
 In that case *boot_index* will differ from *active_index*, a firmware entity, either early bootloader or the UEFI implementation, should rollback the firmware at this point.
 
-![fail-safe](images/fails_safe_boot.jpg)
-
-Early bootloader fail-safe state machine.
+![Early bootloader fail-safe state machine diagram](images/fails_safe_boot.jpg)
 
 ## OS fail-safe boot
 
@@ -42,8 +40,6 @@ The OS may fail to boot because of an incompatibility with the current platform 
 In both these scenarios the UEFI implementation can track for the number of consecutive boots in the Trial state.
 When the handoff from the UEFI implementation to the OS occurs more than a given number of times in the Trial state, the UEFI implementation must request a revert of the firmware to the previously active firmware. By design the previously active firmware is still present in the Firmware Store and is in the Regular state.
 
-The state transition for the UEFI implementation controlled Trial state limitation are shown in :ref:`OS fail-safe <os_fail-safe>`
+The state transition for the UEFI implementation controlled Trial state limitation are shown in the OS fail-safe boot state machine diagram:
 
-![OS fail-safe](images/os_fail_boot.jpg)
-
-OS fail-safe boot state machine.
+![OS fail-safe boot state machine diagram](images/os_fail_boot.jpg)
