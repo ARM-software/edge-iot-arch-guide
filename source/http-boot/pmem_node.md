@@ -1,6 +1,6 @@
 <!--SPDX-License-Identifier: CC-BY-SA-4.0-->
 
-# About This Document
+# HTTP Boot with ramdisk and Devicetree pmem node
 
 This document describes a proposal for providing the operating system with access
 to the boot image, exposed as a ramdisk via a PMEM node on Device Tree based
