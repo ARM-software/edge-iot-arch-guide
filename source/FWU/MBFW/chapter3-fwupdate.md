@@ -33,7 +33,7 @@ construct the ESRT table.
 Each image entry in the FWU image directory exposes a set of fields which map directly to the
 EFI_FIRMWARE_IMAGE_DESCRIPTOR as defined in the following table:
 
-.. table:: EFI_FIRMWARE_IMAGE_DESCRIPTOR Implementation Requirements
+Table: EFI_FIRMWARE_IMAGE_DESCRIPTOR Implementation Requirements
 
    | FWU image directory entry field | EFI_FIRMWARE_IMAGE_DESCRIPTOR |
    |---------------------------------|-------------------------------|
