@@ -64,6 +64,14 @@ Two models exist in this platform model:
 The FWU metadata [FWU]_ is managed by the UEFI implementation.
 The FWU metadata is described in Section 4.1 of [FWU]_.
 
+## Acceptance of images by the UEFI implementation
+
+When the UEFI firmware is responsible for the acceptance of images, it must do
+so before running any UEFI application or driver.
+
+This guarantees that FWU, acceptance and rollback concerns for those images are
+invisible to a UEFI application or driver, or to an OS.
+
 ## Example flows
 
 ### Capsule install Secure World
